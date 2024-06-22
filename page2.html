@@ -12,18 +12,127 @@
 <body class="bg-primary bg-gradient container">
     <div class="container pb-5 pt-2 bg-light" >
         <h1 class="text-center">Sumo Wrestling</h1>
-        <img class="img-fluid" src="images\article_topimage_sumo.jpg" alt="A picture of two sumo wrestlers at the start of a match">
+        <img class="img-fluid border rounded" src="images\article_topimage_sumo.jpg" alt="A picture of two sumo wrestlers at the start of a match">
 
 
         <nav class="nav nav-pills nav-justified navbar-expand-sm">
             <a class="nav-link" aria-current="page" href="index.html">Sumo Stuff</a>
             <a class="nav-link active" href="page2.html">More Sumo Stuff</a>
           </nav>
+
+          <!-- bootstrap table with stripes and hover effect -->
+          <div class="mt-5 text-center">
+            <h2>Sumo Ranks</h2>
+                            <p class="fs-5 text-sm-justify">Here is a small list of the Grand Sumo ranks and which ones are salaried. <br>It also shows about how many wrestlers are currently in each rank.</p>
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Rank</th>
+                                        <th scope="col">Number of Wrestlers</th>
+                                        <th scope="col">Salaried?</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Jonokuchi</td>
+                                        <td>39</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jonidan</td>
+                                        <td>202</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sandanme</td>
+                                        <td>200</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Makushita</td>
+                                        <td>121</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Juryo</td>
+                                        <td>28</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maegashira</td>
+                                        <td>33</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Komusubi</td>
+                                        <td>2</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sekiwake</td>
+                                        <td>2</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ozeki</td>
+                                        <td>4</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yokozuna</td>
+                                        <td>1</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+          </div>
+
+          <!-- more text that's justified to show better in responsive view -->
+          <div>
+            <h2 class="text-center">Sumo Lifestyle</h2>
+            <p class="text-sm-justify fs-5">Sumo wrestlers actually live a fairly tough lifestyle. Aside from living in the stable most of the time, they also have rigorous daily training routines. They also make and eat a lot of very high-calorie food so they can pack on the weight needed for their profession and stay healthy, similar to a strongman.</p>
+          </div>
+          <div>
+            <h2 class="text-center">Sumo Food</h2>
+                 <p class="text-sm-justify fs-5">The thing that sumo wrestlers eat the most, and is also the most well known among sumo fans is a stew called "Chankonabe". This stew is made in a similar style to hot pot, and is full of vegetables and healthy proteins so that sumo wrestlers can not only put on weight, but stay healthy in the process. Meats used are usually chicken or fish, while avoiding things like beef or pork; not only for health purposes but also superstitions, because in sumo, if any part of your body besides the bottoms of your feet touch the ground, you lose. Chicken is an animal that walks on two legs, so it's supposed to bring good luck.</p>
+                 <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <img class="img-fluid rounded" src="images\chankonabe.jpg" alt="A picture of some sumo wrestlers having chankonabe">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid rounded" src="images\cooking chanko.jpg" alt="A picture of chankonabe being cooked">
+                        </div>
+                 </div>
+          </div>
+
+
+    </div>
+    <div class="mt-5">
+        <h2 class="text-center">Sumo Exercise</h2>
+        <p class="text-sm-justify fs-5">In addition to eating a lot of food, sumo wrestlers also do a lot of tough exercises in order to stay strong. Some of the more known ones involve Shiko (stomping), squats, weight training, stretches, and stamina exercises.</p>
     </div>
 
-
-    
-
+    <!-- bootstrap form including text area, and fields for name and email, with a centered submit button, also responsive -->
+    <div class="mt-5">
+        <p class="text-center fs-3">What do you think?</p>
+        <div class="mb-3 mx-5 text-center fs-6">
+            <label for="textarea" class="form-label">Share your thoughts. Do you know of any notable wrestlers? Tell us about em!</label>
+            <textarea class="form-control" id="textarea" rows="10" cols="50"></textarea>
+        </div>
+        <div class="row mx-5">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto mt-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+    </div>
+    <hr>
 
 
 
